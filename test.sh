@@ -14,7 +14,7 @@ pid=$!
 # wait for the sever to start
 sleep 1
 
-# start a long running request2
+# start long running requests
 curl -sSL "http://localhost:8888/${endpoint}?delay=10" >/dev/null &
 curl -sSL "http://localhost:8888/${endpoint}?delay=7" >/dev/null &
 curl -sSL "http://localhost:8888/${endpoint}?delay=4" >/dev/null &

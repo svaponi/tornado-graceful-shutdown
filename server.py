@@ -36,8 +36,8 @@ class BaseHandler(tornado.web.RequestHandler):
 class RootHandler(BaseHandler):
 
     def get(self):
-        self.finish("<a target='_blank' href='http://localhost:8888/blocking'>/blocking<a><br/>"
-                    "<a target='_blank' href='http://localhost:8888/async'>/async<a>")
+        self.finish(f"<a target='_blank' href='/blocking'>/blocking<a><br/>"
+                    f"<a target='_blank' href='/async'>/async<a>")
 
 
 class BlockingHandler(BaseHandler):
